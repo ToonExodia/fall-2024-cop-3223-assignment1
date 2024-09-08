@@ -1,3 +1,6 @@
+// Name: Adam Raczynski
+// UCFID: 5449761
+
 #include <stdio.h>
 #include <math.h>
 
@@ -57,13 +60,7 @@ double calculateHeight (double x1, double y1, double x2, double y2) {
     return height;
 }
 
-
-// double askForUserInput() {
-//     return 0;
-// }
-
-
-// asks for x1 y1 and x2 y2 and then will use those values to display the calculated results
+// asking for (x1,y1) and (x2,y2) and then displaying the values calculated above
 int main(int argc, char **argv) {
 
 
@@ -84,6 +81,8 @@ int main(int argc, char **argv) {
     printf("What is your y2 coordinate: \n");
     scanf(" %lf", &y2);
     
+
+    // displaying calculated values above
     pointsOutput(x1, y1, x2, y2);
     calculatePerimeter(x1, y1, x2, y2);
     calculateArea(x1, y1, x2, y2);
